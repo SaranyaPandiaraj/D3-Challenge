@@ -37,12 +37,12 @@ body{
 }
 
 .header{
-  margin-top: 0;
+  margin-top: 10;
   font-family: "Times New Roman", sans-serif;
   background: #98a6bb;
   color: white;
   padding:20px;
-  padding-left: 60px;
+  padding-left: 70px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
