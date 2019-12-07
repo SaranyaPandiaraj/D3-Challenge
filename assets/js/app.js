@@ -241,14 +241,14 @@ d3.csv("../assets/data/data.csv").then( Health_Poverty => {
 
 	var ageLabel = xLabelsGroup.append('text')
 	.attr('x', 0)
-	.attr('y', 50)
+	.attr('y', 45)
 	.attr('value', 'age')
 	.classed('aText inactive', true)
 	.text('Age (Median)');
 
     var incomeLabel = xLabelsGroup.append('text')
 	.attr('x', 0)
-	.attr('y', 70)
+	.attr('y', 65)
 	.attr('value', 'income')
 	.classed('aText inactive', true)
 	.text('Household Income (Median)');	

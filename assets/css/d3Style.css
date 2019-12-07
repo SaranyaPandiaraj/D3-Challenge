@@ -1,6 +1,6 @@
 .aText {
   font-family: "Times New Roman",sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   text-anchor: middle;
 }
 
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-text { fill : #2AA198; font-size: 13px; font-weight: bold;}
+text { fill : #2AA198; font-size: 15px; font-weight: bold;}
 .domain { fill : #073642; stroke: #073642; }
 
 /* font size dependent on radius, see app.js */
@@ -52,12 +52,14 @@ text { fill : #2AA198; font-size: 13px; font-weight: bold;}
   font-size: 15px;
   line-height: 1.5;
   line-height: 1.5em;
-  color: #fff;
+  color: #839496;
   text-align: center;
   text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.8);
+  background: #073642;
   border-radius: 5px;
   opacity:2px;
+  font-weight: bold;
+  transition: opacity 0.5s ease;
 }
 
 /* Mobile Rules */
