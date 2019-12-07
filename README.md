@@ -16,3 +16,9 @@ The main Goal of D3 project is to analyze the current trends shaping people's li
 		  <li>Smoking rate is higher in the age group of 36-42 years old. Smoking Rate is higher when the Household Income is less. West Virginia & Kentucky State Tops in Smoking Rate of about 26%.</li>
 		  <li>Obesity rate is higher in the age group of 36-48 years old. Obesity Rate is higher when the Household Income is less. Arkansas, West Virginia & Mississippi State Tops in Obesity Rate of about 35%. </li>
 		  </ul>
+
+### For Displaying the D3 Visualization 
+
+Run python -m http.server in the Terminal and this will host the page at `localhost:8000` in your web browser.
+
+
