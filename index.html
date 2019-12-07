@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
+  <title>D3 Data Journalism</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -12,40 +12,55 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+		
+	<link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/d3Style.css">
 
 </head>
 
 <body>
-  <div class="container">
+  <div class="navbar-dark bg-dark">
     <div class="row">
       <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+        <h1 style="text-align: center;">US Demographics  
+        <i class="fas fa-heartbeat fa-2x"></i> Health Risk Factors
+        </h1>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-xs-12  col-md-12">
+        <div class="title">
+          <h2><u>Demographics 
+          Vs Health Risk Factors</u></h2>
+		  <hr>
+          <p>
+            The main Goal of D3 project is to analyze the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help readers understand your findings.The Data Set information is taken from from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System. Using this information, a scatter graph has been plotted to show the relationship between demographics and certain health risk factors. And, also Tool Tip has been incorporated to determine the true value without adding another layer of data. ( Hover on the Circles Tip for the Tool Tip information ) <br/><br/>
+			<i class="far fa-hand-point-down fa-flip-horizontal"></i>
+			Click on the Axis labels to explore the relationship between various demographics and its health risk factors
+			<i class="far fa-hand-point-down fa-flip-horizontal"></i>			
+          </p>
+       
+        </div>
         <div id="scatter">
           <!-- We append our chart here. -->
         </div>
       </div>
     </div>
+    <hr>
     <div class="row">
-      <div class="col-xs-12  col-md-9">
+      <div class="col-xs-12  col-md-12">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h2><u>Correlations Discovered Between Health Risks and Age, Income</u></h2><br/>
+		  <p> From the Data Visualisation, we can infer the below points : </p> 
+		  <ul>
+		  <li>Healthcare Lacking rate is higher in the age group of 34-38 years old.Healthcare Lacking rate is less when there is an increase in the Household income. However we have few exceptions in the States like Texas and Georgia where the Healthcare Lacking Percentage is greater than 20%.</li>
+		  <li>Smoking rate is higher in the age group of 36-42 years old. Smoking Rate is higher when the Household Income is less. West Virginia & Kentucky State Tops in Smoking Rate of about 26%.</li>
+		  <li>Obesity rate is higher in the age group of 36-48 years old. Obesity Rate is higher when the Household Income is less. Arkansas, West Virginia & Mississippi State Tops in Obesity Rate of about 35%. </li>
+		  </ul>
         </div>
       </div>
     </div>
@@ -53,7 +68,9 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+	<div class ="navbar-dark bg-dark">
+    <p><b> ©   Sara Copyrights ~ Data Analytics BootCamp 2019   ©</b></p>
+	</div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
